@@ -231,6 +231,7 @@
     "outputName": "test-results.xml"
   },
   "scripts": {
+    "dev": "make run",
     "check": "eslint --ext .js --ext .jsx --ext tsx --ext ts . --quiet --cache",
     "fix": "eslint --ext .js --ext .jsx --ext tsx --ext ts . --quiet --fix --cache",
     "build": "cross-env NODE_ENV=production webpack --display-error-details --verbose",
@@ -248,5 +249,20 @@
     "storybook": "start-storybook -p 6006 -s ./storybook/static",
     "build-storybook": "build-storybook -s ./storybook/static",
     "check-types": "tsc"
-  }
+  },
+  "description": "See [this link](https://developers.mattermost.com/contribute/webapp/developer-setup/)",
+  "main": "babel.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datajoy-co/mattermost-webapp.git"
+  },
+  "author": "Datajoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datajoy-co/mattermost-webapp/issues"
+  },
+  "homepage": "https://github.com/datajoy-co/mattermost-webapp#readme"
 }
